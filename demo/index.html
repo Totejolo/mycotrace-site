@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MycoTrace Overview</title>
+  <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-title">MycoTrace</div>
+        <div class="brand-subtitle">Variant triage portal for clinical genomics and hematology workflow demos</div>
+      </div>
+      <nav class="nav">
+        <a class="is-active" href="">Overview</a>
+        <a class="" href="cases/">Cases</a>
+        <a class="" href="genes/">Genes</a>
+        <a class="" href="about/">About</a>
+      </nav>
+    </header>
+    
+    <section class="hero">
+      <h1>Clinical variant triage, packaged as a usable demo</h1>
+      <p>This portal takes the MycoTrace pipeline one step further: not just data processing, but a review-facing layer with cases, genes, and the signals that make molecular review slower than it should be.</p>
+      <div class="hero-meta">
+        <span class="pill">generated 2026-04-27T11:03:20Z</span>
+        <span class="pill">7 demo cases</span>
+        <span class="pill">31 tracked heme genes</span>
+        <span class="pill">34623 heme candidate rows</span>
+      </div>
+    </section>
+    <section class="grid" style="margin-bottom:18px;">
+      <div class="panel"><div class="metric">ClinVar rows scanned</div><div class="metric-value">8920416</div></div>
+      <div class="panel"><div class="metric">Prioritized rows</div><div class="metric-value">4156632</div></div>
+      <div class="panel"><div class="metric">Heme candidates</div><div class="metric-value">34623</div></div>
+      <div class="panel"><div class="metric">Tracked genes</div><div class="metric-value">31</div></div>
+      <div class="panel"><div class="metric">Disease areas</div><div class="metric-value">6</div></div>
+      <div class="panel"><div class="metric">Case matches</div><div class="metric-value">21</div></div>
+    </section>
+    <section class="panel" style="margin-bottom:18px;">
+      <div class="section-head">
+        <div>
+          <h2>Disease focus map</h2>
+          <div class="section-copy">Each disease area carries different genes, tiers, and review pressure. This turns a flat CSV into a navigable review surface.</div>
+        </div>
+      </div>
+      <div class="card-grid">
+            <article class="tile">
+              <h3>AML</h3>
+              <p>7828 candidate variants across 8 tracked genes.</p>
+              <div class="tile-meta">
+                <span>cases 2</span>
+                <span>best tier 1</span>
+                <span>CEBPA, IDH1, IDH2, NPM1</span>
+              </div>
+            </article>
+            
+            <article class="tile">
+              <h3>myeloid</h3>
+              <p>14619 candidate variants across 15 tracked genes.</p>
+              <div class="tile-meta">
+                <span>cases 2</span>
+                <span>best tier 1</span>
+                <span>ASXL1, TET2, DNMT3A, RUNX1</span>
+              </div>
+            </article>
+            
+            <article class="tile">
+              <h3>MPN</h3>
+              <p>2346 candidate variants across 4 tracked genes.</p>
+              <div class="tile-meta">
+                <span>cases 2</span>
+                <span>best tier 1</span>
+                <span>MPL, JAK2, CALR, CSF3R</span>
+              </div>
+            </article>
+            
+            <article class="tile">
+              <h3>CLL</h3>
+              <p>4553 candidate variants across 1 tracked genes.</p>
+              <div class="tile-meta">
+                <span>cases 2</span>
+                <span>best tier 1</span>
+                <span>NOTCH1</span>
+              </div>
+            </article>
+            
+            <article class="tile">
+              <h3>lymphoid</h3>
+              <p>1654 candidate variants across 2 tracked genes.</p>
+              <div class="tile-meta">
+                <span>cases 2</span>
+                <span>best tier 1</span>
+                <span>MYD88, BRAF</span>
+              </div>
+            </article>
+            
+            <article class="tile">
+              <h3>pan-heme</h3>
+              <p>3623 candidate variants across 1 tracked genes.</p>
+              <div class="tile-meta">
+                <span>cases 1</span>
+                <span>best tier 1</span>
+                <span>TP53</span>
+              </div>
+            </article>
+            </div>
+    </section>
+    <section class="grid" style="margin-bottom:18px;">
+      <div class="panel">
+        <div class="section-head">
+          <div>
+            <h2>Case queue</h2>
+            <div class="section-copy">Synthetic demo cases show how a case-level workflow could look before a molecular board or analyst review.</div>
+          </div>
+          <a href="cases/">View all cases</a>
+        </div>
+        <div class="card-grid">
+            <article class="case-card">
+              <h3><a href="cases/case-mixed-demo-001/">CASE-MIXED-DEMO-001</a></h3>
+              <p>Synthetic cross-disease demo | MIXED</p>
+              <div class="case-meta">
+                <span>5 matched</span>
+                <span>1 unmatched</span>
+                <span>max score 89</span>
+              </div>
+            </article>
+            
+            <article class="case-card">
+              <h3><a href="cases/case-panheme-demo-001/">CASE-PANHEME-DEMO-001</a></h3>
+              <p>Synthetic pan-heme demo | PAN-HEME</p>
+              <div class="case-meta">
+                <span>1 matched</span>
+                <span>1 unmatched</span>
+                <span>max score 88</span>
+              </div>
+            </article>
+            
+            <article class="case-card">
+              <h3><a href="cases/case-aml-demo-001/">CASE-AML-DEMO-001</a></h3>
+              <p>Synthetic AML demo | AML</p>
+              <div class="case-meta">
+                <span>4 matched</span>
+                <span>1 unmatched</span>
+                <span>max score 87</span>
+              </div>
+            </article>
+            
+            <article class="case-card">
+              <h3><a href="cases/case-mpn-demo-001/">CASE-MPN-DEMO-001</a></h3>
+              <p>Synthetic MPN demo | MPN</p>
+              <div class="case-meta">
+                <span>4 matched</span>
+                <span>1 unmatched</span>
+                <span>max score 87</span>
+              </div>
+            </article>
+            
+            <article class="case-card">
+              <h3><a href="cases/case-myeloid-demo-001/">CASE-MYELOID-DEMO-001</a></h3>
+              <p>Synthetic myeloid demo | MYELOID</p>
+              <div class="case-meta">
+                <span>4 matched</span>
+                <span>1 unmatched</span>
+                <span>max score 87</span>
+              </div>
+            </article>
+            
+            <article class="case-card">
+              <h3><a href="cases/case-lymphoid-demo-001/">CASE-LYMPHOID-DEMO-001</a></h3>
+              <p>Synthetic lymphoid demo | LYMPHOID</p>
+              <div class="case-meta">
+                <span>2 matched</span>
+                <span>1 unmatched</span>
+                <span>max score 87</span>
+              </div>
+            </article>
+            
+            <article class="case-card">
+              <h3><a href="cases/case-cll-demo-001/">CASE-CLL-DEMO-001</a></h3>
+              <p>Synthetic CLL demo | CLL</p>
+              <div class="case-meta">
+                <span>1 matched</span>
+                <span>1 unmatched</span>
+                <span>max score 87</span>
+              </div>
+            </article>
+            </div>
+      </div>
+      <div class="panel">
+        <div class="section-head">
+          <div>
+            <h2>Workflow</h2>
+            <div class="section-copy">This is the work the project is actually doing, not just the UI layer.</div>
+          </div>
+        </div>
+        <ul class="list"><li>Download official ClinVar tab-delimited releases.</li><li>Prioritize records with review friction signals such as VUS, conflicts, and stale evaluations.</li><li>Filter the signal through a heme-focused panel with disease-area notes and tiers.</li><li>Match a case CSV against the curated review queue and render a review-ready portal.</li></ul>
+      </div>
+    </section>
+    <section class="grid">
+      <div class="panel">
+        <div class="section-head">
+          <div>
+            <h2>Gene atlas</h2>
+            <div class="section-copy">Genes with high candidate volume, high VUS load, or repeated presence across cases rise to the top.</div>
+          </div>
+          <a href="genes/">Open gene explorer</a>
+        </div>
+        <table>
+          <thead>
+            <tr><th>Gene</th><th>Area</th><th>Tier</th><th>Candidates</th><th>Cases</th><th>VUS</th><th>Max score</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="genes/notch1/">NOTCH1</a></td>
+              <td>CLL</td>
+              <td>1</td>
+              <td>4553</td>
+              <td>2</td>
+              <td>1578</td>
+              <td>87</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/cebpa/">CEBPA</a></td>
+              <td>AML</td>
+              <td>1</td>
+              <td>1235</td>
+              <td>2</td>
+              <td>682</td>
+              <td>87</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/mpl/">MPL</a></td>
+              <td>MPN</td>
+              <td>1</td>
+              <td>938</td>
+              <td>2</td>
+              <td>299</td>
+              <td>87</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/tp53/">TP53</a></td>
+              <td>pan-heme</td>
+              <td>1</td>
+              <td>3623</td>
+              <td>1</td>
+              <td>972</td>
+              <td>88</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/asxl1/">ASXL1</a></td>
+              <td>myeloid</td>
+              <td>1</td>
+              <td>2413</td>
+              <td>1</td>
+              <td>1199</td>
+              <td>85</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/tet2/">TET2</a></td>
+              <td>myeloid</td>
+              <td>1</td>
+              <td>1844</td>
+              <td>1</td>
+              <td>1078</td>
+              <td>87</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/dnmt3a/">DNMT3A</a></td>
+              <td>myeloid</td>
+              <td>1</td>
+              <td>1228</td>
+              <td>1</td>
+              <td>471</td>
+              <td>87</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/runx1/">RUNX1</a></td>
+              <td>myeloid</td>
+              <td>1</td>
+              <td>1081</td>
+              <td>1</td>
+              <td>1004</td>
+              <td>85</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/jak2/">JAK2</a></td>
+              <td>MPN</td>
+              <td>1</td>
+              <td>575</td>
+              <td>1</td>
+              <td>325</td>
+              <td>85</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/idh1/">IDH1</a></td>
+              <td>AML</td>
+              <td>1</td>
+              <td>469</td>
+              <td>1</td>
+              <td>275</td>
+              <td>85</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/idh2/">IDH2</a></td>
+              <td>AML</td>
+              <td>1</td>
+              <td>284</td>
+              <td>1</td>
+              <td>149</td>
+              <td>85</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/myd88/">MYD88</a></td>
+              <td>lymphoid</td>
+              <td>1</td>
+              <td>183</td>
+              <td>1</td>
+              <td>84</td>
+              <td>85</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/calr/">CALR</a></td>
+              <td>MPN</td>
+              <td>1</td>
+              <td>68</td>
+              <td>1</td>
+              <td>40</td>
+              <td>75</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/npm1/">NPM1</a></td>
+              <td>AML</td>
+              <td>1</td>
+              <td>62</td>
+              <td>1</td>
+              <td>25</td>
+              <td>85</td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <div class="section-head">
+          <div>
+            <h2>Top priority variants</h2>
+            <div class="section-copy">A quick slice of the strongest review-pressure signals in the heme-focused layer.</div>
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr><th>Gene</th><th>Variant</th><th>Significance</th><th>Area</th><th>Score</th><th>Flags</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="genes/bcor/">BCOR</a></td>
+              <td>NM_001123385.2(BCOR):c.5134G&gt;A (p.Asp1712Asn)</td>
+              <td>Uncertain significance</td>
+              <td>myeloid</td>
+              <td>89</td>
+              <td>vus; multiple_submitters; low_review_confidence; stale_evaluation</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/tp53/">TP53</a></td>
+              <td>NM_000546.6(TP53):c.400T&gt;C (p.Phe134Leu)</td>
+              <td>Uncertain significance</td>
+              <td>pan-heme</td>
+              <td>88</td>
+              <td>vus; multiple_submitters; low_review_confidence; stale_evaluation</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/tp53/">TP53</a></td>
+              <td>NM_000546.6(TP53):c.402T&gt;G (p.Phe134Leu)</td>
+              <td>Uncertain significance</td>
+              <td>pan-heme</td>
+              <td>88</td>
+              <td>vus; multiple_submitters; low_review_confidence; stale_evaluation</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/tp53/">TP53</a></td>
+              <td>NM_000546.6(TP53):c.993G&gt;C (p.Gln331His)</td>
+              <td>Uncertain significance</td>
+              <td>pan-heme</td>
+              <td>88</td>
+              <td>vus; multiple_submitters; low_review_confidence; stale_evaluation</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/cebpa/">CEBPA</a></td>
+              <td>NM_004364.5(CEBPA):c.-39C&gt;A</td>
+              <td>Uncertain significance</td>
+              <td>AML</td>
+              <td>87</td>
+              <td>vus; multiple_submitters; low_review_confidence; stale_evaluation</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/dnmt3a/">DNMT3A</a></td>
+              <td>NM_022552.5(DNMT3A):c.862C&gt;T (p.Arg288Trp)</td>
+              <td>Uncertain significance</td>
+              <td>myeloid</td>
+              <td>87</td>
+              <td>vus; multiple_submitters; low_review_confidence; stale_evaluation</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/mpl/">MPL</a></td>
+              <td>NM_005373.3(MPL):c.1639G&gt;A (p.Ala547Thr)</td>
+              <td>Uncertain significance</td>
+              <td>MPN</td>
+              <td>87</td>
+              <td>vus; multiple_submitters; low_review_confidence; stale_evaluation</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/notch1/">NOTCH1</a></td>
+              <td>NM_017617.5(NOTCH1):c.1441G&gt;C (p.Gly481Arg)</td>
+              <td>Uncertain significance</td>
+              <td>CLL</td>
+              <td>87</td>
+              <td>vus; multiple_submitters; low_review_confidence; stale_evaluation</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/notch1/">NOTCH1</a></td>
+              <td>NM_017617.5(NOTCH1):c.6010C&gt;T (p.Arg2004Cys)</td>
+              <td>Uncertain significance</td>
+              <td>CLL</td>
+              <td>87</td>
+              <td>vus; multiple_submitters; low_review_confidence; stale_evaluation</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/tet2/">TET2</a></td>
+              <td>NM_001127208.3(TET2):c.3500+6T&gt;G</td>
+              <td>Uncertain significance</td>
+              <td>myeloid</td>
+              <td>87</td>
+              <td>vus; multiple_submitters; low_review_confidence; stale_evaluation</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/tp53/">TP53</a></td>
+              <td>NM_000546.6(TP53):c.432G&gt;T (p.Gln144His)</td>
+              <td>Uncertain significance</td>
+              <td>pan-heme</td>
+              <td>87</td>
+              <td>vus; multiple_submitters; low_review_confidence; stale_evaluation</td>
+            </tr>
+            
+            <tr>
+              <td><a href="genes/braf/">BRAF</a></td>
+              <td>NM_004333.6(BRAF):c.1756G&gt;A (p.Glu586Lys)</td>
+              <td>Uncertain significance</td>
+              <td>lymphoid</td>
+              <td>87</td>
+              <td>vus; multiple_submitters; low_review_confidence; stale_evaluation</td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      Rendered locally by MycoTrace. Keep public demos synthetic and keep sensitive data out of the public layer.
+    </footer>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
