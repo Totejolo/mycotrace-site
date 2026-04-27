@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MycoTrace Genes</title>
+  <link rel="stylesheet" href="../assets/app.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-title">MycoTrace</div>
+        <div class="brand-subtitle">Variant triage portal for clinical genomics and hematology workflow demos</div>
+      </div>
+      <nav class="nav">
+        <a class="" href="../">Overview</a>
+        <a class="" href="../cases/">Cases</a>
+        <a class="is-active" href="../genes/">Genes</a>
+        <a class="" href="../about/">About</a>
+      </nav>
+    </header>
+    
+    <section class="hero">
+      <h1>Gene explorer</h1>
+      <p>This view turns the heme panel into a compact atlas: which genes carry the most candidate load, how often they appear in matched cases, and where the review pressure concentrates.</p>
+    </section>
+    <section class="panel">
+      <div class="section-head">
+        <div>
+          <h2>Tracked heme genes</h2>
+          <div class="section-copy">Search by gene symbol, disease area, panel notes, or case id.</div>
+        </div>
+        <div class="filter-box">
+          <input type="search" placeholder="Search genes, disease areas, panel notes, or case ids" data-filter-target="gene-table-body" data-filter-selector="tr[data-filterable]" data-empty-id="gene-table-empty">
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Gene</th><th>Area</th><th>Tier</th><th>Candidates</th><th>Cases</th><th>VUS</th><th>Conflicts</th><th>Max score</th></tr>
+        </thead>
+        <tbody id="gene-table-body">
+            <tr data-filterable data-search="NOTCH1 CLL Common CLL-associated mutation CASE-CLL-DEMO-001 CASE-MIXED-DEMO-001">
+              <td><a href="./notch1/">NOTCH1</a></td>
+              <td>CLL</td>
+              <td>1</td>
+              <td>4553</td>
+              <td>2</td>
+              <td>1578</td>
+              <td>594</td>
+              <td>87</td>
+            </tr>
+            
+            <tr data-filterable data-search="CEBPA AML Important AML classification and risk gene CASE-AML-DEMO-001 CASE-MIXED-DEMO-001">
+              <td><a href="./cebpa/">CEBPA</a></td>
+              <td>AML</td>
+              <td>1</td>
+              <td>1235</td>
+              <td>2</td>
+              <td>682</td>
+              <td>119</td>
+              <td>87</td>
+            </tr>
+            
+            <tr data-filterable data-search="MPL MPN Core MPN driver gene CASE-MIXED-DEMO-001 CASE-MPN-DEMO-001">
+              <td><a href="./mpl/">MPL</a></td>
+              <td>MPN</td>
+              <td>1</td>
+              <td>938</td>
+              <td>2</td>
+              <td>299</td>
+              <td>28</td>
+              <td>87</td>
+            </tr>
+            
+            <tr data-filterable data-search="TP53 pan-heme High-priority pan-hematology tumor suppressor CASE-PANHEME-DEMO-001">
+              <td><a href="./tp53/">TP53</a></td>
+              <td>pan-heme</td>
+              <td>1</td>
+              <td>3623</td>
+              <td>1</td>
+              <td>972</td>
+              <td>524</td>
+              <td>88</td>
+            </tr>
+            
+            <tr data-filterable data-search="ASXL1 myeloid Recurrently relevant in MDS CMML and related myeloid neoplasms CASE-MYELOID-DEMO-001">
+              <td><a href="./asxl1/">ASXL1</a></td>
+              <td>myeloid</td>
+              <td>1</td>
+              <td>2413</td>
+              <td>1</td>
+              <td>1199</td>
+              <td>124</td>
+              <td>85</td>
+            </tr>
+            
+            <tr data-filterable data-search="TET2 myeloid Common myeloid mutation with interpretation relevance CASE-MYELOID-DEMO-001">
+              <td><a href="./tet2/">TET2</a></td>
+              <td>myeloid</td>
+              <td>1</td>
+              <td>1844</td>
+              <td>1</td>
+              <td>1078</td>
+              <td>11</td>
+              <td>87</td>
+            </tr>
+            
+            <tr data-filterable data-search="DNMT3A myeloid Common myeloid mutation with clonal hematopoiesis overlap CASE-MYELOID-DEMO-001">
+              <td><a href="./dnmt3a/">DNMT3A</a></td>
+              <td>myeloid</td>
+              <td>1</td>
+              <td>1228</td>
+              <td>1</td>
+              <td>471</td>
+              <td>33</td>
+              <td>87</td>
+            </tr>
+            
+            <tr data-filterable data-search="RUNX1 myeloid Major myeloid diagnostic and prognostic gene CASE-MYELOID-DEMO-001">
+              <td><a href="./runx1/">RUNX1</a></td>
+              <td>myeloid</td>
+              <td>1</td>
+              <td>1081</td>
+              <td>1</td>
+              <td>1004</td>
+              <td>0</td>
+              <td>85</td>
+            </tr>
+            
+            <tr data-filterable data-search="JAK2 MPN Core MPN driver gene CASE-MPN-DEMO-001">
+              <td><a href="./jak2/">JAK2</a></td>
+              <td>MPN</td>
+              <td>1</td>
+              <td>575</td>
+              <td>1</td>
+              <td>325</td>
+              <td>16</td>
+              <td>85</td>
+            </tr>
+            
+            <tr data-filterable data-search="IDH1 AML Targetable AML-associated gene CASE-AML-DEMO-001">
+              <td><a href="./idh1/">IDH1</a></td>
+              <td>AML</td>
+              <td>1</td>
+              <td>469</td>
+              <td>1</td>
+              <td>275</td>
+              <td>0</td>
+              <td>85</td>
+            </tr>
+            
+            <tr data-filterable data-search="IDH2 AML Targetable AML-associated gene CASE-AML-DEMO-001">
+              <td><a href="./idh2/">IDH2</a></td>
+              <td>AML</td>
+              <td>1</td>
+              <td>284</td>
+              <td>1</td>
+              <td>149</td>
+              <td>7</td>
+              <td>85</td>
+            </tr>
+            
+            <tr data-filterable data-search="MYD88 lymphoid Important in selected B-cell lymphoid disorders CASE-LYMPHOID-DEMO-001">
+              <td><a href="./myd88/">MYD88</a></td>
+              <td>lymphoid</td>
+              <td>1</td>
+              <td>183</td>
+              <td>1</td>
+              <td>84</td>
+              <td>2</td>
+              <td>85</td>
+            </tr>
+            
+            <tr data-filterable data-search="CALR MPN Core MPN driver gene CASE-MPN-DEMO-001">
+              <td><a href="./calr/">CALR</a></td>
+              <td>MPN</td>
+              <td>1</td>
+              <td>68</td>
+              <td>1</td>
+              <td>40</td>
+              <td>0</td>
+              <td>75</td>
+            </tr>
+            
+            <tr data-filterable data-search="NPM1 AML Core AML classification and risk gene CASE-AML-DEMO-001">
+              <td><a href="./npm1/">NPM1</a></td>
+              <td>AML</td>
+              <td>1</td>
+              <td>62</td>
+              <td>1</td>
+              <td>25</td>
+              <td>0</td>
+              <td>85</td>
+            </tr>
+            
+            <tr data-filterable data-search="FLT3 AML Major AML therapeutic and risk marker ">
+              <td><a href="./flt3/">FLT3</a></td>
+              <td>AML</td>
+              <td>1</td>
+              <td>225</td>
+              <td>0</td>
+              <td>77</td>
+              <td>0</td>
+              <td>75</td>
+            </tr>
+            
+            <tr data-filterable data-search="SF3B1 myeloid Core splicing gene for myeloid interpretation ">
+              <td><a href="./sf3b1/">SF3B1</a></td>
+              <td>myeloid</td>
+              <td>1</td>
+              <td>74</td>
+              <td>0</td>
+              <td>47</td>
+              <td>1</td>
+              <td>85</td>
+            </tr>
+            
+            <tr data-filterable data-search="SRSF2 myeloid Core splicing gene for myeloid interpretation ">
+              <td><a href="./srsf2/">SRSF2</a></td>
+              <td>myeloid</td>
+              <td>1</td>
+              <td>15</td>
+              <td>0</td>
+              <td>9</td>
+              <td>0</td>
+              <td>85</td>
+            </tr>
+            
+            <tr data-filterable data-search="U2AF1 myeloid Core splicing gene for myeloid interpretation ">
+              <td><a href="./u2af1/">U2AF1</a></td>
+              <td>myeloid</td>
+              <td>1</td>
+              <td>8</td>
+              <td>0</td>
+              <td>6</td>
+              <td>0</td>
+              <td>75</td>
+            </tr>
+            
+            <tr data-filterable data-search="BRAF lymphoid Relevant in selected lymphoid disorders and targeted contexts CASE-LYMPHOID-DEMO-001 CASE-MIXED-DEMO-001">
+              <td><a href="./braf/">BRAF</a></td>
+              <td>lymphoid</td>
+              <td>2</td>
+              <td>1471</td>
+              <td>2</td>
+              <td>650</td>
+              <td>69</td>
+              <td>87</td>
+            </tr>
+            
+            <tr data-filterable data-search="BCOR myeloid Useful in extended myeloid interpretation panels CASE-MIXED-DEMO-001">
+              <td><a href="./bcor/">BCOR</a></td>
+              <td>myeloid</td>
+              <td>2</td>
+              <td>808</td>
+              <td>1</td>
+              <td>366</td>
+              <td>49</td>
+              <td>89</td>
+            </tr>
+            
+            <tr data-filterable data-search="CSF3R MPN Relevant in neutrophilic leukemias and related disorders CASE-MPN-DEMO-001">
+              <td><a href="./csf3r/">CSF3R</a></td>
+              <td>MPN</td>
+              <td>2</td>
+              <td>765</td>
+              <td>1</td>
+              <td>399</td>
+              <td>27</td>
+              <td>87</td>
+            </tr>
+            
+            <tr data-filterable data-search="KIT AML Relevant in selected AML and mast cell contexts ">
+              <td><a href="./kit/">KIT</a></td>
+              <td>AML</td>
+              <td>2</td>
+              <td>3349</td>
+              <td>0</td>
+              <td>1628</td>
+              <td>211</td>
+              <td>87</td>
+            </tr>
+            
+            <tr data-filterable data-search="WT1 AML Relevant in selected AML contexts ">
+              <td><a href="./wt1/">WT1</a></td>
+              <td>AML</td>
+              <td>2</td>
+              <td>1942</td>
+              <td>0</td>
+              <td>936</td>
+              <td>143</td>
+              <td>85</td>
+            </tr>
+            
+            <tr data-filterable data-search="SETBP1 myeloid Relevant in overlap and proliferative myeloid disease ">
+              <td><a href="./setbp1/">SETBP1</a></td>
+              <td>myeloid</td>
+              <td>2</td>
+              <td>1856</td>
+              <td>0</td>
+              <td>756</td>
+              <td>123</td>
+              <td>85</td>
+            </tr>
+            
+            <tr data-filterable data-search="GATA2 myeloid Useful in selected predisposition and myeloid contexts ">
+              <td><a href="./gata2/">GATA2</a></td>
+              <td>myeloid</td>
+              <td>2</td>
+              <td>1792</td>
+              <td>0</td>
+              <td>855</td>
+              <td>100</td>
+              <td>87</td>
+            </tr>
+            
+            <tr data-filterable data-search="PTPN11 myeloid Pathway-level relevance in several myeloid settings ">
+              <td><a href="./ptpn11/">PTPN11</a></td>
+              <td>myeloid</td>
+              <td>2</td>
+              <td>1245</td>
+              <td>0</td>
+              <td>508</td>
+              <td>68</td>
+              <td>87</td>
+            </tr>
+            
+            <tr data-filterable data-search="STAG2 myeloid Cohesin-related gene recurrent in myeloid neoplasms ">
+              <td><a href="./stag2/">STAG2</a></td>
+              <td>myeloid</td>
+              <td>2</td>
+              <td>746</td>
+              <td>0</td>
+              <td>318</td>
+              <td>8</td>
+              <td>87</td>
+            </tr>
+            
+            <tr data-filterable data-search="EZH2 myeloid Recurring myeloid and overlap-neoplasm gene ">
+              <td><a href="./ezh2/">EZH2</a></td>
+              <td>myeloid</td>
+              <td>2</td>
+              <td>689</td>
+              <td>0</td>
+              <td>243</td>
+              <td>16</td>
+              <td>87</td>
+            </tr>
+            
+            <tr data-filterable data-search="KRAS myeloid RAS-pathway signal for myeloid disease interpretation ">
+              <td><a href="./kras/">KRAS</a></td>
+              <td>myeloid</td>
+              <td>2</td>
+              <td>508</td>
+              <td>0</td>
+              <td>193</td>
+              <td>25</td>
+              <td>87</td>
+            </tr>
+            
+            <tr data-filterable data-search="NRAS myeloid RAS-pathway signal for myeloid disease interpretation ">
+              <td><a href="./nras/">NRAS</a></td>
+              <td>myeloid</td>
+              <td>2</td>
+              <td>312</td>
+              <td>0</td>
+              <td>157</td>
+              <td>17</td>
+              <td>85</td>
+            </tr>
+            
+            <tr data-filterable data-search="PHF6 AML Recurrent in selected hematologic malignancies ">
+              <td><a href="./phf6/">PHF6</a></td>
+              <td>AML</td>
+              <td>2</td>
+              <td>262</td>
+              <td>0</td>
+              <td>100</td>
+              <td>7</td>
+              <td>85</td>
+            </tr>
+            </tbody>
+      </table>
+      <div id="gene-table-empty" class="empty-state" hidden>No genes match the current search.</div>
+    </section>
+    
+    <footer class="footer">
+      Rendered locally by MycoTrace. Keep public demos synthetic and keep sensitive data out of the public layer.
+    </footer>
+  </div>
+  <script src="../assets/app.js"></script>
+</body>
+</html>
