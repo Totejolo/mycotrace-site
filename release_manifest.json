@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-04-27T11:03:20Z",
+  "public_root": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release",
+  "public_index": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\index.html",
+  "demo_root": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo",
+  "base_url": "",
+  "counts": {
+    "cases": 7,
+    "input_variant_rows": 28,
+    "matched_rows": 21,
+    "tracked_genes": 31,
+    "heme_candidates": 34623
+  }
+}
