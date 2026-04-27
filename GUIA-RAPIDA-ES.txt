@@ -1,0 +1,38 @@
+Guia rapida de publicacion de MycoTrace
+
+1. Vista local
+- Si quieres ver la web en local con servidor, ejecuta:
+  scripts\run_cli.cmd serve-public-release
+- Si prefieres abrirla sin servidor, abre:
+  index.html
+
+2. Carpeta que debes subir a GitHub
+- Sube el contenido de ESTA carpeta.
+- No subas la carpeta padre del proyecto.
+- No subas la carpeta results completa.
+
+3. GitHub Pages paso a paso
+- Crea un repositorio publico, por ejemplo: mycotrace-site
+- Sube todos los archivos y carpetas de esta carpeta a la raiz del repo
+- En GitHub ve a Settings > Pages
+- En Build and deployment elige:
+  Source: Deploy from a branch
+  Branch: main
+  Folder: /(root)
+- Guarda y espera a que GitHub genere la URL publica
+
+4. Que debes comprobar al publicarlo
+- La portada carga bien
+- /demo/ carga bien
+- /demo/cases/ carga bien
+- /demo/genes/ carga bien
+
+5. Orden recomendado de lanzamiento
+- Primero ensenarlo por privado a 1 persona de hematologia o laboratorio
+- Luego ensenarlo a tu tutor
+- Despues publicar en LinkedIn con el enlace real
+
+6. Importante
+- Mantener la demo publica con datos sinteticos
+- No venderlo como sistema diagnostico
+- Presentarlo como herramienta de apoyo a revision y triage
