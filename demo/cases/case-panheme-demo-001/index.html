@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MycoTrace CASE-PANHEME-DEMO-001</title>
+  <link rel="stylesheet" href="../../assets/app.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-title">MycoTrace</div>
+        <div class="brand-subtitle">Variant triage portal for clinical genomics and hematology workflow demos</div>
+      </div>
+      <nav class="nav">
+        <a class="" href="../../">Overview</a>
+        <a class="is-active" href="../../cases/">Cases</a>
+        <a class="" href="../../genes/">Genes</a>
+        <a class="" href="../../about/">About</a>
+      </nav>
+    </header>
+    
+    <section class="hero">
+      <h1>CASE-PANHEME-DEMO-001</h1>
+      <p>Patient Synthetic pan-heme demo | Sample SAMPLE-PANHEME-001 | Disease hint PAN-HEME</p>
+      <div class="hero-meta">
+        <span class="pill">High review pressure</span>
+        <span class="pill">1 matched variants</span>
+        <span class="pill">1 unmatched variants</span>
+      </div>
+    </section>
+    <section class="kpi-strip" style="margin-bottom:18px;">
+      <div class="kpi"><span class="metric">Input variants</span><strong>2</strong></div>
+      <div class="kpi"><span class="metric">Matched genes</span><strong>1</strong></div>
+      <div class="kpi"><span class="metric">Max priority score</span><strong>88</strong></div>
+      <div class="kpi"><span class="metric">Disease areas reached</span><strong>1</strong></div>
+    </section>
+    <section class="panel" style="margin-bottom:18px;">
+      <div class="section-head">
+        <div>
+          <h2>Matched findings</h2>
+          <div class="section-copy">These rows already intersect the heme review queue, so they are natural candidates for faster human review.</div>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Gene</th><th>Area</th><th>Significance</th><th>Review status</th><th>Flags</th><th>Panel notes</th><th>Score</th><th>Tier</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td><a href="../../genes/tp53/">TP53</a></td>
+              <td>pan-heme</td>
+              <td>Uncertain significance</td>
+              <td>criteria provided, single submitter</td>
+              <td>vus;multiple_submitters;low_review_confidence;stale_evaluation</td>
+              <td>High-priority pan-hematology tumor suppressor</td>
+              <td>88</td>
+              <td>1</td>
+            </tr>
+            </tbody>
+      </table>
+    </section>
+    <section class="panel" style="margin-bottom:18px;">
+      <div class="section-head">
+        <div>
+          <h2>Unmatched variants</h2>
+          <div class="section-copy">These inputs were present in the case CSV but did not intersect the current heme-focused queue.</div>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Gene</th><th>Observed variant</th><th>Coordinates</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>MSH6</td>
+              <td>NM_000179.3(MSH6):c.3261dup (p.Phe1088LeufsTer5)</td>
+              <td class="mono">2:47805796 G&gt;A</td>
+              <td>Synthetic unmatched control outside the heme panel.</td>
+            </tr>
+            </tbody>
+      </table>
+    </section>
+    <section class="panel">
+      <h2>Clinical caution</h2>
+      <p class="warning">This case page supports triage and discussion. It does not classify a patient or replace a molecular board.</p>
+      <p class="muted"><a href="../">Back to case explorer</a> | <a href="../../">Back to overview</a></p>
+    </section>
+    
+    <footer class="footer">
+      Rendered locally by MycoTrace. Keep public demos synthetic and keep sensitive data out of the public layer.
+    </footer>
+  </div>
+  <script src="../../assets/app.js"></script>
+</body>
+</html>
