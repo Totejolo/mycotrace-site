@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About MycoTrace</title>
+  <link rel="stylesheet" href="../assets/app.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-title">MycoTrace</div>
+        <div class="brand-subtitle">Variant triage portal for clinical genomics and hematology workflow demos</div>
+      </div>
+      <nav class="nav">
+        <a class="" href="../">Overview</a>
+        <a class="" href="../cases/">Cases</a>
+        <a class="" href="../genes/">Genes</a>
+        <a class="is-active" href="../about/">About</a>
+      </nav>
+    </header>
+    
+    <section class="hero">
+      <h1>About this portal</h1>
+      <p>MycoTrace is being shaped as a portfolio-grade, review-facing bioinformatics tool: official public data, reproducible processing, a heme-focused interpretation layer, and a usable portal for discussion.</p>
+    </section>
+    <section class="grid" style="margin-bottom:18px;">
+      <div class="panel">
+        <h2>Data sources and scope</h2>
+        <ul class="list">
+          <li>Case input file: <span class="mono">C:\Users\Usuario\Desktop\MycoTrace\data\input\cases\demo_case_pack.csv</span></li>
+          <li>Heme candidate file: <span class="mono">C:\Users\Usuario\Desktop\MycoTrace\data\processed\heme_priority_candidates.csv</span></li>
+          <li>Panel file: <span class="mono">C:\Users\Usuario\Desktop\MycoTrace\data\reference\heme_gene_panel.csv</span></li>
+          <li>Panel genes: 31 | tier 1: 18, tier 2: 13</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h2>What this portal proves</h2>
+        <ul class="list">
+          <li>Bioinformatics ETL: raw ClinVar to structured triage outputs.</li>
+          <li>Clinical awareness: VUS, conflict load, and review confidence are explicit signals.</li>
+          <li>Product thinking: cases, genes, and evidence are arranged for human review, not just for code completeness.</li>
+          <li>Safe boundaries: local, synthetic, read-only demo before any serious production ambitions.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="grid">
+      <div class="panel">
+        <h2>How to publish it well</h2>
+        <ul class="list"><li>GitHub as the public technical home for code, README, figures, and reproducibility notes.</li><li>LinkedIn for the story: the bottleneck, the build, one screenshot, and the next question.</li><li>Warm hematology or molecular contacts for pilot-style feedback on output shape and utility.</li><li>Hiring managers or recruiters in bioinformatics, diagnostics, and translational genomics once the demo is stable.</li></ul>
+      </div>
+      <div class="panel">
+        <h2>How to extend it</h2>
+        <ul class="list"><li>Add a new case CSV in data/input/cases and rebuild the portal against it.</li><li>Expand the panel CSV in data/reference when a new disease area or gene set matters.</li><li>Add new PostgreSQL tables and expose them through the analytics bundle before showing them in HTML.</li><li>Keep public demos synthetic and keep any real or sensitive data in a private environment.</li></ul>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      Rendered locally by MycoTrace. Keep public demos synthetic and keep sensitive data out of the public layer.
+    </footer>
+  </div>
+  <script src="../assets/app.js"></script>
+</body>
+</html>
