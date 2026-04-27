@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MycoTrace Cases</title>
+  <link rel="stylesheet" href="../assets/app.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-title">MycoTrace</div>
+        <div class="brand-subtitle">Variant triage portal for clinical genomics and hematology workflow demos</div>
+      </div>
+      <nav class="nav">
+        <a class="" href="../">Overview</a>
+        <a class="is-active" href="../cases/">Cases</a>
+        <a class="" href="../genes/">Genes</a>
+        <a class="" href="../about/">About</a>
+      </nav>
+    </header>
+    
+    <section class="hero">
+      <h1>Case explorer</h1>
+      <p>Each case is a review-support artifact built by matching a case CSV against the heme-focused queue. Search by case id, disease area, patient label, or gene.</p>
+    </section>
+    <section class="panel">
+      <div class="section-head">
+        <div>
+          <h2>All demo cases</h2>
+          <div class="section-copy">This is where a future private app could list uploaded or imported cases. For now it is synthetic portfolio data.</div>
+        </div>
+        <div class="filter-box">
+          <input type="search" placeholder="Search cases, disease areas, or genes" data-filter-target="case-list" data-empty-id="case-list-empty">
+        </div>
+      </div>
+      <div id="case-list" class="card-grid">
+            <article class="case-card" data-filterable data-search="CASE-MIXED-DEMO-001 Synthetic cross-disease demo MIXED BCOR BRAF CEBPA MPL NOTCH1">
+              <h3><a href="./case-mixed-demo-001/">CASE-MIXED-DEMO-001</a></h3>
+              <p>Synthetic cross-disease demo | SAMPLE-MIXED-001</p>
+              <div class="case-meta">
+                <span>MIXED</span>
+                <span>5 matched</span>
+                <span>1 unmatched</span>
+                <span>High review pressure</span>
+              </div>
+              <div class="case-meta">
+                <span>BCOR, BRAF, CEBPA, MPL, NOTCH1</span>
+              </div>
+            </article>
+            
+            <article class="case-card" data-filterable data-search="CASE-PANHEME-DEMO-001 Synthetic pan-heme demo PAN-HEME TP53">
+              <h3><a href="./case-panheme-demo-001/">CASE-PANHEME-DEMO-001</a></h3>
+              <p>Synthetic pan-heme demo | SAMPLE-PANHEME-001</p>
+              <div class="case-meta">
+                <span>PAN-HEME</span>
+                <span>1 matched</span>
+                <span>1 unmatched</span>
+                <span>High review pressure</span>
+              </div>
+              <div class="case-meta">
+                <span>TP53</span>
+              </div>
+            </article>
+            
+            <article class="case-card" data-filterable data-search="CASE-AML-DEMO-001 Synthetic AML demo AML CEBPA IDH1 IDH2 NPM1">
+              <h3><a href="./case-aml-demo-001/">CASE-AML-DEMO-001</a></h3>
+              <p>Synthetic AML demo | SAMPLE-AML-001</p>
+              <div class="case-meta">
+                <span>AML</span>
+                <span>4 matched</span>
+                <span>1 unmatched</span>
+                <span>High review pressure</span>
+              </div>
+              <div class="case-meta">
+                <span>CEBPA, IDH1, IDH2, NPM1</span>
+              </div>
+            </article>
+            
+            <article class="case-card" data-filterable data-search="CASE-MPN-DEMO-001 Synthetic MPN demo MPN CALR CSF3R JAK2 MPL">
+              <h3><a href="./case-mpn-demo-001/">CASE-MPN-DEMO-001</a></h3>
+              <p>Synthetic MPN demo | SAMPLE-MPN-001</p>
+              <div class="case-meta">
+                <span>MPN</span>
+                <span>4 matched</span>
+                <span>1 unmatched</span>
+                <span>High review pressure</span>
+              </div>
+              <div class="case-meta">
+                <span>CALR, CSF3R, JAK2, MPL</span>
+              </div>
+            </article>
+            
+            <article class="case-card" data-filterable data-search="CASE-MYELOID-DEMO-001 Synthetic myeloid demo MYELOID ASXL1 DNMT3A RUNX1 TET2">
+              <h3><a href="./case-myeloid-demo-001/">CASE-MYELOID-DEMO-001</a></h3>
+              <p>Synthetic myeloid demo | SAMPLE-MYELOID-001</p>
+              <div class="case-meta">
+                <span>MYELOID</span>
+                <span>4 matched</span>
+                <span>1 unmatched</span>
+                <span>High review pressure</span>
+              </div>
+              <div class="case-meta">
+                <span>ASXL1, DNMT3A, RUNX1, TET2</span>
+              </div>
+            </article>
+            
+            <article class="case-card" data-filterable data-search="CASE-LYMPHOID-DEMO-001 Synthetic lymphoid demo LYMPHOID BRAF MYD88">
+              <h3><a href="./case-lymphoid-demo-001/">CASE-LYMPHOID-DEMO-001</a></h3>
+              <p>Synthetic lymphoid demo | SAMPLE-LYMPHOID-001</p>
+              <div class="case-meta">
+                <span>LYMPHOID</span>
+                <span>2 matched</span>
+                <span>1 unmatched</span>
+                <span>High review pressure</span>
+              </div>
+              <div class="case-meta">
+                <span>BRAF, MYD88</span>
+              </div>
+            </article>
+            
+            <article class="case-card" data-filterable data-search="CASE-CLL-DEMO-001 Synthetic CLL demo CLL NOTCH1">
+              <h3><a href="./case-cll-demo-001/">CASE-CLL-DEMO-001</a></h3>
+              <p>Synthetic CLL demo | SAMPLE-CLL-001</p>
+              <div class="case-meta">
+                <span>CLL</span>
+                <span>1 matched</span>
+                <span>1 unmatched</span>
+                <span>High review pressure</span>
+              </div>
+              <div class="case-meta">
+                <span>NOTCH1</span>
+              </div>
+            </article>
+            </div>
+      <div id="case-list-empty" class="empty-state" hidden>No cases match the current search.</div>
+    </section>
+    
+    <footer class="footer">
+      Rendered locally by MycoTrace. Keep public demos synthetic and keep sensitive data out of the public layer.
+    </footer>
+  </div>
+  <script src="../assets/app.js"></script>
+</body>
+</html>
