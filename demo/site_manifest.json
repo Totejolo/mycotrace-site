@@ -1,0 +1,205 @@
+{
+  "generated_at": "2026-04-27T11:03:20Z",
+  "site_root": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo",
+  "case_pages": [
+    {
+      "case_id": "CASE-MIXED-DEMO-001",
+      "slug": "case-mixed-demo-001",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\cases\\case-mixed-demo-001\\index.html"
+    },
+    {
+      "case_id": "CASE-PANHEME-DEMO-001",
+      "slug": "case-panheme-demo-001",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\cases\\case-panheme-demo-001\\index.html"
+    },
+    {
+      "case_id": "CASE-AML-DEMO-001",
+      "slug": "case-aml-demo-001",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\cases\\case-aml-demo-001\\index.html"
+    },
+    {
+      "case_id": "CASE-MPN-DEMO-001",
+      "slug": "case-mpn-demo-001",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\cases\\case-mpn-demo-001\\index.html"
+    },
+    {
+      "case_id": "CASE-MYELOID-DEMO-001",
+      "slug": "case-myeloid-demo-001",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\cases\\case-myeloid-demo-001\\index.html"
+    },
+    {
+      "case_id": "CASE-LYMPHOID-DEMO-001",
+      "slug": "case-lymphoid-demo-001",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\cases\\case-lymphoid-demo-001\\index.html"
+    },
+    {
+      "case_id": "CASE-CLL-DEMO-001",
+      "slug": "case-cll-demo-001",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\cases\\case-cll-demo-001\\index.html"
+    }
+  ],
+  "gene_pages": [
+    {
+      "gene_symbol": "NOTCH1",
+      "slug": "notch1",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\notch1\\index.html"
+    },
+    {
+      "gene_symbol": "CEBPA",
+      "slug": "cebpa",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\cebpa\\index.html"
+    },
+    {
+      "gene_symbol": "MPL",
+      "slug": "mpl",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\mpl\\index.html"
+    },
+    {
+      "gene_symbol": "TP53",
+      "slug": "tp53",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\tp53\\index.html"
+    },
+    {
+      "gene_symbol": "ASXL1",
+      "slug": "asxl1",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\asxl1\\index.html"
+    },
+    {
+      "gene_symbol": "TET2",
+      "slug": "tet2",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\tet2\\index.html"
+    },
+    {
+      "gene_symbol": "DNMT3A",
+      "slug": "dnmt3a",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\dnmt3a\\index.html"
+    },
+    {
+      "gene_symbol": "RUNX1",
+      "slug": "runx1",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\runx1\\index.html"
+    },
+    {
+      "gene_symbol": "JAK2",
+      "slug": "jak2",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\jak2\\index.html"
+    },
+    {
+      "gene_symbol": "IDH1",
+      "slug": "idh1",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\idh1\\index.html"
+    },
+    {
+      "gene_symbol": "IDH2",
+      "slug": "idh2",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\idh2\\index.html"
+    },
+    {
+      "gene_symbol": "MYD88",
+      "slug": "myd88",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\myd88\\index.html"
+    },
+    {
+      "gene_symbol": "CALR",
+      "slug": "calr",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\calr\\index.html"
+    },
+    {
+      "gene_symbol": "NPM1",
+      "slug": "npm1",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\npm1\\index.html"
+    },
+    {
+      "gene_symbol": "FLT3",
+      "slug": "flt3",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\flt3\\index.html"
+    },
+    {
+      "gene_symbol": "SF3B1",
+      "slug": "sf3b1",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\sf3b1\\index.html"
+    },
+    {
+      "gene_symbol": "SRSF2",
+      "slug": "srsf2",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\srsf2\\index.html"
+    },
+    {
+      "gene_symbol": "U2AF1",
+      "slug": "u2af1",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\u2af1\\index.html"
+    },
+    {
+      "gene_symbol": "BRAF",
+      "slug": "braf",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\braf\\index.html"
+    },
+    {
+      "gene_symbol": "BCOR",
+      "slug": "bcor",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\bcor\\index.html"
+    },
+    {
+      "gene_symbol": "CSF3R",
+      "slug": "csf3r",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\csf3r\\index.html"
+    },
+    {
+      "gene_symbol": "KIT",
+      "slug": "kit",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\kit\\index.html"
+    },
+    {
+      "gene_symbol": "WT1",
+      "slug": "wt1",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\wt1\\index.html"
+    },
+    {
+      "gene_symbol": "SETBP1",
+      "slug": "setbp1",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\setbp1\\index.html"
+    },
+    {
+      "gene_symbol": "GATA2",
+      "slug": "gata2",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\gata2\\index.html"
+    },
+    {
+      "gene_symbol": "PTPN11",
+      "slug": "ptpn11",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\ptpn11\\index.html"
+    },
+    {
+      "gene_symbol": "STAG2",
+      "slug": "stag2",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\stag2\\index.html"
+    },
+    {
+      "gene_symbol": "EZH2",
+      "slug": "ezh2",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\ezh2\\index.html"
+    },
+    {
+      "gene_symbol": "KRAS",
+      "slug": "kras",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\kras\\index.html"
+    },
+    {
+      "gene_symbol": "NRAS",
+      "slug": "nras",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\nras\\index.html"
+    },
+    {
+      "gene_symbol": "PHF6",
+      "slug": "phf6",
+      "html": "C:\\Users\\Usuario\\Desktop\\MycoTrace\\results\\public_release\\demo\\genes\\phf6\\index.html"
+    }
+  ],
+  "counts": {
+    "cases": 7,
+    "input_variant_rows": 28,
+    "matched_rows": 21,
+    "tracked_genes": 31,
+    "heme_candidates": 34623
+  }
+}
