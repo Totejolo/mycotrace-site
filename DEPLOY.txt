@@ -1,0 +1,18 @@
+MycoTrace public release
+
+This folder is ready to be published as a static website.
+
+Recommended fastest GitHub Pages route:
+1. Create a new public repository on GitHub.
+2. Upload all files and folders from this folder to the root of that repository.
+3. In GitHub go to Settings > Pages.
+4. Under Build and deployment choose:
+   Source: Deploy from a branch
+   Branch: main
+   Folder: /(root)
+5. Save and wait for the site URL.
+
+Important:
+- Upload the contents of this folder, not the parent project folder.
+- Keep the demo synthetic for the public version.
+- If you prefer Spanish instructions, open GUIA-RAPIDA-ES.txt.
