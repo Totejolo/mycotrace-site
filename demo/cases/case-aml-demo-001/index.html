@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MycoTrace CASE-AML-DEMO-001</title>
+  <link rel="stylesheet" href="../../assets/app.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-title">MycoTrace</div>
+        <div class="brand-subtitle">Variant triage portal for clinical genomics and hematology workflow demos</div>
+      </div>
+      <nav class="nav">
+        <a class="" href="../../">Overview</a>
+        <a class="is-active" href="../../cases/">Cases</a>
+        <a class="" href="../../genes/">Genes</a>
+        <a class="" href="../../about/">About</a>
+      </nav>
+    </header>
+    
+    <section class="hero">
+      <h1>CASE-AML-DEMO-001</h1>
+      <p>Patient Synthetic AML demo | Sample SAMPLE-AML-001 | Disease hint AML</p>
+      <div class="hero-meta">
+        <span class="pill">High review pressure</span>
+        <span class="pill">4 matched variants</span>
+        <span class="pill">1 unmatched variants</span>
+      </div>
+    </section>
+    <section class="kpi-strip" style="margin-bottom:18px;">
+      <div class="kpi"><span class="metric">Input variants</span><strong>5</strong></div>
+      <div class="kpi"><span class="metric">Matched genes</span><strong>4</strong></div>
+      <div class="kpi"><span class="metric">Max priority score</span><strong>87</strong></div>
+      <div class="kpi"><span class="metric">Disease areas reached</span><strong>1</strong></div>
+    </section>
+    <section class="panel" style="margin-bottom:18px;">
+      <div class="section-head">
+        <div>
+          <h2>Matched findings</h2>
+          <div class="section-copy">These rows already intersect the heme review queue, so they are natural candidates for faster human review.</div>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Gene</th><th>Area</th><th>Significance</th><th>Review status</th><th>Flags</th><th>Panel notes</th><th>Score</th><th>Tier</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td><a href="../../genes/cebpa/">CEBPA</a></td>
+              <td>AML</td>
+              <td>Uncertain significance</td>
+              <td>criteria provided, single submitter</td>
+              <td>vus;multiple_submitters;low_review_confidence;stale_evaluation</td>
+              <td>Important AML classification and risk gene</td>
+              <td>87</td>
+              <td>1</td>
+            </tr>
+            
+            <tr>
+              <td><a href="../../genes/idh1/">IDH1</a></td>
+              <td>AML</td>
+              <td>Uncertain significance</td>
+              <td>no assertion criteria provided</td>
+              <td>vus;low_review_confidence;stale_evaluation</td>
+              <td>Targetable AML-associated gene</td>
+              <td>85</td>
+              <td>1</td>
+            </tr>
+            
+            <tr>
+              <td><a href="../../genes/idh2/">IDH2</a></td>
+              <td>AML</td>
+              <td>Uncertain significance</td>
+              <td>criteria provided, single submitter</td>
+              <td>vus;low_review_confidence;stale_evaluation</td>
+              <td>Targetable AML-associated gene</td>
+              <td>85</td>
+              <td>1</td>
+            </tr>
+            
+            <tr>
+              <td><a href="../../genes/npm1/">NPM1</a></td>
+              <td>AML</td>
+              <td>Uncertain significance</td>
+              <td>no assertion criteria provided</td>
+              <td>vus;low_review_confidence;stale_evaluation</td>
+              <td>Core AML classification and risk gene</td>
+              <td>85</td>
+              <td>1</td>
+            </tr>
+            </tbody>
+      </table>
+    </section>
+    <section class="panel" style="margin-bottom:18px;">
+      <div class="section-head">
+        <div>
+          <h2>Unmatched variants</h2>
+          <div class="section-copy">These inputs were present in the case CSV but did not intersect the current heme-focused queue.</div>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Gene</th><th>Observed variant</th><th>Coordinates</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>BRCA1</td>
+              <td>NM_007294.4(BRCA1):c.5096G&gt;A (p.Arg1699Gln)</td>
+              <td class="mono">17:43071077 G&gt;A</td>
+              <td>Synthetic unmatched control outside the heme panel.</td>
+            </tr>
+            </tbody>
+      </table>
+    </section>
+    <section class="panel">
+      <h2>Clinical caution</h2>
+      <p class="warning">This case page supports triage and discussion. It does not classify a patient or replace a molecular board.</p>
+      <p class="muted"><a href="../">Back to case explorer</a> | <a href="../../">Back to overview</a></p>
+    </section>
+    
+    <footer class="footer">
+      Rendered locally by MycoTrace. Keep public demos synthetic and keep sensitive data out of the public layer.
+    </footer>
+  </div>
+  <script src="../../assets/app.js"></script>
+</body>
+</html>
